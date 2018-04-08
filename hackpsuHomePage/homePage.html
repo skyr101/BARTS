@@ -23,36 +23,21 @@
     
     <table align="center">
       <tr>
-        <td>
-        <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Activity
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu" class="activity">
-    <li><a href="#">Running</a></li>
-    <li><a href="#">Biking</a>
-      </div>
-        </td>
-        <td>
-   <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Location
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">State College</a></li>
-      </div>
-      </td>
       <td>
    <div class="textInput">
-      <input type="text" name="Mileage" title="Mileage" value="Mileage" onfocus="inputFocus(this)" onblur="inputBlur(this)"  style="color: #888;" >
+      <input type="text" name="Distance" title="Distance" value="Distance" onfocus="inputFocus(this)" onblur="inputBlur(this)"  style="color: #888;" >
       </div> 
     </td>
     <td>
-  <button class="btn btn-primary" type="button">Enter
+  <button class="btn btn-primary" type="button" id="enter" onClick="document.getElementById('map').scrollIntoView();">Miles 
+  </button>
+    </td>
+    <td>
+  <button class="btn btn-primary" type="button" id="enter" onClick="document.getElementById('map').scrollIntoView();">Kilometers
   </button>
     </td>
   </tr>
 </table>
- 
-<!--  <table id="routeData" class="display" width="50%"></table> -->
 
     <div id="map"></div>
     <script>
@@ -82,9 +67,4 @@ function inputFocus(i) {
 function inputBlur(i) {
     if (i.value == "") { i.value = i.defaultValue; i.style.color = "#888"; }
 }
-
-$(".dropdown-menu li a").click(function(){
-  $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
-  $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
-}); 
 </script>
