@@ -1,0 +1,61 @@
+@font-face {
+	font-family: cursiveFont;
+	src: url(DancingScript-Regular.ttf);
+}
+
+@font-face {
+	font-family: modernFont;
+	src: url(Lato-Regular.ttf);
+}
+
+
+#banner {
+  background-image: url("mountains.png");
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  height: 850px;
+  opacity: .65;
+}
+
+h1 {
+	font-family: cursiveFont;
+	font-size: 150px;
+	position: relative;
+	top: -490px;
+	text-align: center;
+	color: white;
+}
+
+h2 {
+	font-family: 'Montserrat', Extra-Light;
+	font-size: 45px;
+	position: relative;
+	top: -500px;
+	text-align: center;
+	color: white;
+
+}
+
+table {
+	position: relative;
+	top: -480px;
+}
+
+td {
+	padding-right: 20px;
+}
+
+#map {
+    height: 450px;
+    width: 75%;
+    position: relative;
+    top: -285px;
+    float: right;
+    margin-right: 50px;
+
+       }
+
+.dropdown {
+	font-family: modernFont;
+}
